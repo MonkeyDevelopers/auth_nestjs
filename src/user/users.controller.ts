@@ -5,7 +5,7 @@ import { UsersService } from './users.service';
 export class UsersController {
    constructor(private service: UsersService) {}
    
-   @Get('listar')
+   @Get()
    findAll() {
      return this.service.findAll();
    }
